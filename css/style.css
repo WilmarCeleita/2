@@ -138,13 +138,14 @@ body{
 
 .portafolioServicios{
     display: grid;
-    grid-template-areas:    "gimnasiaLaboral foto-1" 
-                            "foto-2 serviciosSeguridad"   
-                            "serviciosFitness foto-3";
+    grid-template-areas:    "serviciosSeguridad foto-1" 
+                            "foto-2 serviciosFitness"   
+                            "gimnasiaLaboral foto-3";
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 10px;
-    align-items: center;
+    align-items: top;
     margin: 70px ;
     margin-bottom: 40px;
                   
@@ -169,7 +170,6 @@ body{
 .foto-1:hover {
     filter: none;
 }
-
 
 
 /* Segundo programa */
@@ -213,6 +213,39 @@ body{
 .foto-3:hover {
     filter: none;
 }
+
+
+.gimnasiaLaboral p,
+.serviciosSeguridad p,
+.serviciosFitness p {
+    /* background-color: #acbcf0; */
+    padding: 10px;
+    color: #0f0707;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+}
+
+.gimnasiaLaboral h2,
+.serviciosSeguridad h2,
+.serviciosFitness h2 {
+    /* background-color: #acbcf0; */
+    padding: 10px;
+    color: #0f0707;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+
+
+
+
 
 
 /* pie de pagina */
