@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: #122a76;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        flex-direction: column;
+        background-color: #0f0707;
+        color: yellowgreen;
+    }
+    
+
+}
+
+
+/* revisar todoooo ejemplos */
+@media (max-width: 600px) { /* max = hasta...  */
+    /* estilos CSS */
+    .box-responsive {
+        background-color: tomato;
+    }
+    .box-responsive p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) { /* min = desde... */
+    .box-responsive {
+        background-color: black;
+        color: white;
+    }
+    .grid-responsive {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 950px) { /* desde y hasta */
+    .box-responsive h2 {
+        background-color: blueviolet;
+        color: yellow;
+    }
+}
